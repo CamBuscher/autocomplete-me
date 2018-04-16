@@ -11,6 +11,13 @@ class Trie {
     this.root = new Node();
     this.count = 0;
     this.suggestions = [];
+
+    this.insert = this.insert.bind(this);
+    this.populate = this.populate.bind(this);
+    this.suggest = this.suggest.bind(this);
+    this.findTheWords = this.findTheWords.bind(this);
+    this.delete = this.delete.bind(this);
+    this.select = this.select.bind(this);
   }
 
   insert(word, node = this.root, arr = []) {
