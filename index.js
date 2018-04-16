@@ -107,6 +107,4 @@ class Trie {
   }
 }
 
-module.exports = {
-  Trie
-}
+module.exports = Trie;
