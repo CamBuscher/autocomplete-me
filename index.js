@@ -108,6 +108,5 @@ class Trie {
 }
 
 module.exports = {
-  Node,
   Trie
 }
