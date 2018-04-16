@@ -73,6 +73,10 @@ class Trie {
   }
 
   findTheWords(currentNode) {
+    if (currentNode === undefined || currentNode.children === undefined) {
+      return ''
+    }
+
     const childrenKeys = Object.keys(currentNode.children);
 
     childrenKeys.forEach(key => {
@@ -110,4 +114,4 @@ class Trie {
   }
 }
 
-module.exports = Trie;
+module.exports = Trie; 
